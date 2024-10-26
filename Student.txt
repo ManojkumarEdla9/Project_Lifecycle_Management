@@ -24,7 +24,6 @@ private int age;
 private String grades;
 private String name;
 
-@ManyToMany(cascade=CascadeType.ALL)
 @JoinTable(name="Employee_department",
 				joinColumns=@JoinColumn(name="Employee_id",referencedColumnName="id"),
 				inverseJoinColumns=@JoinColumn(name="department_id",referencedColumnName="id"))
